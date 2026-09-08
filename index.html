@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0d10">
+<title>Mandarin Progress</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0b0d10;color:#e6e9ef;font:15px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+padding:24px 16px 64px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto}
+h1{font-size:19px;font-weight:600;letter-spacing:-.01em}
+.sub{color:#7d8694;font-size:13px;margin-top:3px}
+.hero{background:linear-gradient(145deg,#161a20,#11141a);border:1px solid #232833;border-radius:16px;
+padding:24px;margin:20px 0}
+.lvl{font-size:13px;color:#8b95a5;text-transform:uppercase;letter-spacing:.09em;font-weight:600}
+.title{font-size:30px;font-weight:700;margin:6px 0 2px;letter-spacing:-.02em;
+background:linear-gradient(90deg,#f0b45f,#e8734a);-webkit-background-clip:text;background-clip:text;
+-webkit-text-fill-color:transparent}
+.xp{color:#9aa4b2;font-size:14px}
+.bar{height:9px;background:#1e232c;border-radius:99px;margin:16px 0 7px;overflow:hidden}
+.fill{height:100%;background:linear-gradient(90deg,#e8734a,#f0b45f);border-radius:99px;
+transition:width .6s cubic-bezier(.4,0,.2,1)}
+.next{font-size:12px;color:#6d7684}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:11px;margin:18px 0}
+.card{background:#12151b;border:1px solid #1f242e;border-radius:13px;padding:15px 16px}
+.k{font-size:11px;color:#79828f;text-transform:uppercase;letter-spacing:.07em;font-weight:600}
+.v{font-size:25px;font-weight:700;margin-top:5px;letter-spacing:-.02em}
+.v small{font-size:13px;color:#79828f;font-weight:500;letter-spacing:0}
+.flame{color:#f0b45f}
+h2{font-size:12px;color:#79828f;text-transform:uppercase;letter-spacing:.09em;
+margin:30px 0 12px;font-weight:600}
+.strip{display:flex;gap:4px;flex-wrap:wrap}
+.d{width:26px;height:26px;border-radius:6px;background:#1a1f27;display:flex;align-items:center;
+justify-content:center;font-size:11px;font-weight:600;color:#5d6673}
+.d.right{background:#1f4d33;color:#7ee0a8}.d.close{background:#4a4426;color:#e8cf7a}
+.d.off{background:#4d2a2a;color:#eda1a1}
+.row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;
+border-bottom:1px solid #181c24;gap:12px}
+.row:last-child{border-bottom:0}
+.wb{flex:1;height:6px;background:#1a1f27;border-radius:99px;margin:0 12px;overflow:hidden;max-width:160px}
+.wf{height:100%;background:linear-gradient(90deg,#e8734a,#f0b45f);border-radius:99px}
+.cnt{font-size:12px;color:#79828f;min-width:16px;text-align:right}
+.vocab{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:9px}
+.vi{background:#12151b;border:1px solid #1f242e;border-radius:10px;padding:11px 13px}
+.vt{font-weight:650;color:#f0b45f;font-size:15px}
+.vg{color:#9aa4b2;font-size:13px;margin-top:2px}
+.q{background:#12151b;border:1px solid #1f242e;border-radius:11px;padding:13px 15px;margin-bottom:9px}
+.qh{display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
+.tag{font-size:10px;padding:2px 7px;border-radius:5px;font-weight:700;letter-spacing:.05em}
+.tag.CURRENT{background:#1f4d33;color:#7ee0a8}.tag.REVIEW{background:#26374d;color:#8fbce8}
+.tag.RESET{background:#33323a;color:#a3a0ad}
+.when{font-size:11px;color:#5d6673}
+.qt{font-size:14px}
+.ans{color:#7ee0a8;font-size:13px;margin-top:6px;font-family:ui-monospace,SFMono-Regular,monospace}
+.pend{color:#f0b45f;font-size:13px;margin-top:6px;font-style:italic}
+.gl{background:#12151b;border-left:2px solid #e8734a;border-radius:0 9px 9px 0;
+padding:10px 13px;margin-bottom:8px;font-size:13.5px;color:#c3cad4}
+.gl b{color:#f0b45f;font-weight:650}
+.foot{color:#4d555f;font-size:11px;text-align:center;margin-top:38px}
+.empty{color:#5d6673;font-size:13px;font-style:italic}
+@media(max-width:520px){.title{font-size:25px}.v{font-size:21px}body{padding:16px 12px 48px}}
+</style></head><body><div class="wrap">
+<h1>Mandarin Progress</h1>
+<div class="sub">Record 6 · class 9.8 (added 2026-09-08)</div>
+<div class="hero">
+<div class="lvl">Level 1</div>
+<div class="title">Nǐ hǎo</div>
+<div class="xp">23 XP</div>
+<div class="bar"><div class="fill" style="width:38%"></div></div>
+<div class="next">37 XP to next level</div>
+</div>
+<div class="grid">
+<div class="card"><div class="k">Streak</div><div class="v">3 <span class="flame">🔥</span> <small>best 3</small></div></div>
+<div class="card"><div class="k">Response rate</div><div class="v">100% <small>3/3</small></div></div>
+<div class="card"><div class="k">Accuracy</div><div class="v">67% <small>when answered</small></div></div>
+<div class="card"><div class="k">Ignored</div><div class="v">0</div></div>
+</div>
+<h2>Last 30 answers</h2>
+<div class="strip">
+<div class="d right" title="2026-09-08">✓</div>
+<div class="d off" title="2026-09-08">✗</div>
+<div class="d right" title="2026-09-08">✓</div>
+</div>
+<h2>Weak spots</h2>
+<div class="row"><div>dōu placement (before verb)</div><div class="wb"><div class="wf" style="width:100%"></div></div><div class="cnt">2</div></div>
+<div class="row"><div>suīrán…dànshì (keep both halves)</div><div class="wb"><div class="wf" style="width:50%"></div></div><div class="cnt">1</div></div>
+<div class="row"><div>le placement (sentence-final w/ object)</div><div class="wb"><div class="wf" style="width:50%"></div></div><div class="cnt">1</div></div>
+<div class="row"><div>gānggāng vs zuótiān vs yǐjīng</div><div class="wb"><div class="wf" style="width:50%"></div></div><div class="cnt">1</div></div>
+<div class="row"><div>zěnmeyàng question form</div><div class="wb"><div class="wf" style="width:50%"></div></div><div class="cnt">1</div></div>
+<div class="empty" style="margin-top:10px">cleared: bù vs méi (past negation), time placement (zuótiān / míngtiān before verb), yīnwèi vs suīrán (causal vs concessive)</div>
+<h2>Current lesson — vocabulary</h2><div class="vocab">
+<div class="vi"><div class="vt">kè</div><div class="vg">class / lesson (noun)</div></div>
+<div class="vi"><div class="vt">kǎoshì</div><div class="vg">exam / test (noun)</div></div>
+<div class="vi"><div class="vt">zěnmeyàng</div><div class="vg">how is it? / how&#x27;s it going? (question phrase)</div></div>
+<div class="vi"><div class="vt">gānggāng</div><div class="vg">just / a moment ago (adverb)</div></div>
+<div class="vi"><div class="vt">dào jiā</div><div class="vg">to get home (verb phrase); dào + place = to arrive at</div></div>
+<div class="vi"><div class="vt">wúliáo</div><div class="vg">boring (adj)</div></div>
+<div class="vi"><div class="vt">wèishénme</div><div class="vg">why (question word)</div></div>
+<div class="vi"><div class="vt">shuǐkè</div><div class="vg">a &quot;water course&quot; — slang for an easy class with little substance (noun)</div></div>
+<div class="vi"><div class="vt">dōu</div><div class="vg">all / both (adverb)</div></div>
+<div class="vi"><div class="vt">yīnwèi</div><div class="vg">because (conjunction)</div></div>
+<div class="vi"><div class="vt">zhòngyào</div><div class="vg">important (adj) · bù zhòngyào = not important</div></div>
+<div class="vi"><div class="vt">zhuānyè</div><div class="vg">academic major (noun)</div></div>
+</div>
+<h2>Current lesson — grammar</h2>
+<div class="gl"><b>A. Noun + zěnmeyàng? </b>= &quot;How is/was ___?&quot; — Nǐ de kè zěnmeyàng? · Nǐ de kǎoshì zěnmeyàng? · Nǐ de gōngzuò zěnmeyàng?</div>
+<div class="gl"><b>B. gānggāng + verb </b>= just did something (a moment ago). Wǒ gānggāng dào jiā. · With zài for an ongoing action just now: Nǐ gānggāng zài zuò shénme? = What were you doing just now? → Wǒ gānggāng zài zuò kāfēi. / Wǒ gānggāng zài shuìjiào.</div>
+<div class="gl">Contrast to drill: gānggāng (just now, minutes ago) vs zuótiān (yesterday) vs yǐjīng (already).</div>
+<div class="gl"><b>C. dào + place (+ le) </b>= arrive at. Wǒ zuótiān dào jiā le. · Xià ge xīngqī wǒ dào Bìlǔ. (= I arrive in Peru next week.)</div>
+<div class="gl"><b>D. wèishénme </b>= why. Sits where the answer goes, no inversion: Wèishénme nǐ de kè dōu shì shuǐkè? Answered with yīnwèi.</div>
+<div class="gl"><b>E. Subject + dōu shì + noun </b>= all of them are ___. Tāmen shì Zhōngguó rén → Tāmen dōu shì Zhōngguó rén (they are ALL Chinese). · Zhèxiē diāosù dōu shì wǒ de. = These sculptures are all mine. · Zhèxiē dōu shì wǔ yuán, nàxiē dōu shì shí yuán.</div>
+<div class="gl">dōu goes BEFORE the verb, never after the subject-noun it quantifies.</div>
+<div class="gl"><b>F. yīnwèi </b>= because. Jīntiān wǒ zài jiā, yīnwèi jīntiān shì xīngqīliù.</div>
+<div class="gl">Pairs with the known weak spot: yīnwèi…suǒyǐ (causal) vs suīrán…dànshì (concessive) — drill the contrast.</div>
+<div class="gl"><b>G. bù + adjective </b>= not ___. bù zhòngyào, bù wúliáo (Jīntiān bù wúliáo.)</div>
+<h2>Recent questions</h2>
+<div class="q"><div class="qh"><span class="tag REVIEW">REVIEW</span><span class="when">2026-09-08 17:20</span></div>
+<div class="qt">Pin→Eng — Wǒ míngtiān bù qù jīchǎng.</div>
+<div class="pend">awaiting your answer — answer hidden</div>
+</div>
+<div class="q"><div class="qh"><span class="tag REVIEW">REVIEW</span><span class="when">2026-09-08 17:05</span></div>
+<div class="qt">GramContrast — Which is correct? A. Wǒ zuótiān bù qù. B. Wǒ zuótiān méi qù. C. Zuótiān bù qù. D. Zuótiān méi qù.</div>
+<div class="ans">B</div>
+</div>
+<div class="q"><div class="qh"><span class="tag CURRENT">CURRENT</span><span class="when">2026-09-08 16:50</span></div>
+<div class="qt">FillBlank — Tāmen ___ shì Zhōngguó rén. (They are all Chinese.)</div>
+<div class="ans">dōu</div>
+</div>
+<div class="q"><div class="qh"><span class="tag REVIEW">REVIEW</span><span class="when">2026-09-08 16:45</span></div>
+<div class="qt">MultiChoice — Which means &#x27;because&#x27;? A. suīrán  B. yīnwèi  C. dànshì  D. yě</div>
+<div class="ans">B</div>
+</div>
+<div class="q"><div class="qh"><span class="tag CURRENT">CURRENT</span><span class="when">2026-09-08 16:30</span></div>
+<div class="qt">GramContrast — Which is correct? A. gānggāng dào jiā zuótiān B. zuótiān gānggāng dào jiā C. gānggāng dào jiā D. zuótiān dào jiā</div>
+<div class="ans">C</div>
+</div>
+<div class="q"><div class="qh"><span class="tag CURRENT">CURRENT</span><span class="when">2026-09-08 15:45</span></div>
+<div class="qt">Sent6 — Build sentence: zhuānyè, bù zhòngyào, yīnwèi</div>
+<div class="ans">Yīnwèi wǒ de zhuānyè bù zhòngyào.</div>
+</div>
+<div class="q"><div class="qh"><span class="tag CURRENT">CURRENT</span><span class="when">2026-09-08 09:30</span></div>
+<div class="qt">Eng→pin — How is your exam going?</div>
+<div class="ans">Nǐ de kǎoshì zěnmeyàng?</div>
+</div>
+<div class="foot">updated 2026-09-08 16:57</div>
+</div></body></html>
